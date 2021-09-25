@@ -1,6 +1,6 @@
 ### 01 September 2021
 
-### Explore Bike Share Data Analysis
+### Bike Share Data Analysis
 
 ### Description
 The project explores and analyses _Bike Share_ data to draw sound and logical analytical conclusions.
@@ -10,5 +10,6 @@ The project explores and analyses _Bike Share_ data to draw sound and logical an
 * new-york-city.csv
 * washington.csv
 
+
 ### Credits
-I would like to thank [Udacity](www.udacity.com) for equipping with the knowledge and skills to complete the project.
+Thank you to [Udacity](www.udacity.com) for equipping with the necessary skills to complete the project. I would also like to thank me for humbling myself enough to learn and put in the necessary work to acquire these skills.
