@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Explore_bikeshare_data</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Bike Share Data Analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11715,7 +11715,7 @@ ul.typeahead-list > li > a {
 
     </style>
 <style type="text/css">
-    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when 
+    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when
 a notebook is open. this rule won't be applied when the notebook is not open (in 404 view for example) */
 body[data-notebook-name] #menubar-container #maintoolbar:not(.show-panel),
 body[data-notebook-name] #menubar-container ul.navbar-nav:not(.show-panel) {
@@ -11749,14 +11749,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -12385,8 +12385,8 @@ ADQEGjsAAAAADYHGDgAAAEBD/B+xfINXDE+9xAAAAABJRU5ErkJggg=="
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">qplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Gender</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Trip.Duration</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="nf">subset</span><span class="p">(</span><span class="n">chi</span><span class="p">,</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">Gender</span><span class="p">)),</span> 
-      <span class="n">geom</span> <span class="o">=</span> <span class="s">&#39;boxplot&#39;</span><span class="p">,</span> 
+<div class=" highlight hl-r"><pre><span></span><span class="nf">qplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Gender</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Trip.Duration</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="nf">subset</span><span class="p">(</span><span class="n">chi</span><span class="p">,</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">Gender</span><span class="p">)),</span>
+      <span class="n">geom</span> <span class="o">=</span> <span class="s">&#39;boxplot&#39;</span><span class="p">,</span>
       <span class="n">xlab</span> <span class="o">=</span> <span class="s">&quot;Gender&quot;</span><span class="p">,</span>
       <span class="n">ylab</span> <span class="o">=</span> <span class="s">&quot;Trip Duration&quot;</span><span class="p">,</span>
       <span class="n">ylim</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">1000</span><span class="p">))</span>
@@ -12655,16 +12655,16 @@ QgISICQgAUICEiAkIAFCAhL4/9c1T3JZeINnAAAAAElFTkSuQmCC"
 
 
 <div class="output_text output_subarea ">
-<pre>chi$Gender: 
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   63.0   918.8  1370.0  1929.5  1934.0 85408.0 
------------------------------------------------------------- 
+<pre>chi$Gender:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   63.0   918.8  1370.0  1929.5  1934.0 85408.0
+------------------------------------------------------------
 chi$Gender: Female
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-     60     406     668     774    1004   12913 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+     60     406     668     774    1004   12913
+------------------------------------------------------------
 chi$Gender: Male
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
    60.0   338.0   536.0   655.4   847.5 21634.0 </pre>
 </div>
 
@@ -12697,7 +12697,7 @@ chi$Gender: Male
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Birth.Year</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Trip.Duration</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">ny</span><span class="p">)</span> <span class="o">+</span> 
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Birth.Year</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Trip.Duration</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">ny</span><span class="p">)</span> <span class="o">+</span>
  <span class="nf">xlim</span><span class="p">(</span><span class="m">1975</span><span class="p">,</span><span class="m">2005</span><span class="p">)</span> <span class="o">+</span> <span class="nf">ylim</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">5000</span><span class="p">)</span> <span class="o">+</span>
   <span class="nf">geom_point</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="m">0.05</span><span class="p">,</span> <span class="n">position</span> <span class="o">=</span> <span class="nf">position_jitter</span><span class="p">(</span><span class="n">h</span><span class="o">=</span><span class="m">0</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;green&#39;</span> <span class="p">)</span> <span class="o">+</span>
   <span class="nf">coord_trans</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s">&#39;sqrt&#39;</span><span class="p">)</span> <span class="o">+</span>
@@ -20330,327 +20330,327 @@ RU5ErkJggg=="
 
 <div class="output_text output_subarea ">
 <pre>ny$Birth.Year: 1885
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    642     713     784     782     852     920 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    642     713     784     782     852     920
+------------------------------------------------------------
 ny$Birth.Year: 1886
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   1711    1711    1711    1711    1711    1711 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   1711    1711    1711    1711    1711    1711
+------------------------------------------------------------
 ny$Birth.Year: 1893
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    829     829     829     829     829     829 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    829     829     829     829     829     829
+------------------------------------------------------------
 ny$Birth.Year: 1899
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   1166    1247    1328    1328    1410    1491 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   1166    1247    1328    1328    1410    1491
+------------------------------------------------------------
 ny$Birth.Year: 1900
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  345.0   873.5  1124.0  1089.4  1247.5  1915.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  345.0   873.5  1124.0  1089.4  1247.5  1915.0
+------------------------------------------------------------
 ny$Birth.Year: 1901
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  624.0   773.2   922.5   922.5  1071.8  1221.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  624.0   773.2   922.5   922.5  1071.8  1221.0
+------------------------------------------------------------
 ny$Birth.Year: 1910
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  137.0   150.0   163.0   156.3   166.0   169.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  137.0   150.0   163.0   156.3   166.0   169.0
+------------------------------------------------------------
 ny$Birth.Year: 1917
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    354     354     354     354     354     354 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    354     354     354     354     354     354
+------------------------------------------------------------
 ny$Birth.Year: 1923
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    472     472     472     472     472     472 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    472     472     472     472     472     472
+------------------------------------------------------------
 ny$Birth.Year: 1926
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    312     312     312     312     312     312 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    312     312     312     312     312     312
+------------------------------------------------------------
 ny$Birth.Year: 1927
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    857     857     857     857     857     857 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    857     857     857     857     857     857
+------------------------------------------------------------
 ny$Birth.Year: 1930
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   1776    1776    1776    1776    1776    1776 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   1776    1776    1776    1776    1776    1776
+------------------------------------------------------------
 ny$Birth.Year: 1932
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  296.0   380.0   464.0   650.3   827.5  1191.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  296.0   380.0   464.0   650.3   827.5  1191.0
+------------------------------------------------------------
 ny$Birth.Year: 1934
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  581.0   648.0   710.0   764.1   876.5  1009.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  581.0   648.0   710.0   764.1   876.5  1009.0
+------------------------------------------------------------
 ny$Birth.Year: 1935
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    384     384     384     384     384     384 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    384     384     384     384     384     384
+------------------------------------------------------------
 ny$Birth.Year: 1936
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  189.0   680.2  1171.5  1171.5  1662.8  2154.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  189.0   680.2  1171.5  1171.5  1662.8  2154.0
+------------------------------------------------------------
 ny$Birth.Year: 1937
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    593     593     593     593     593     593 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    593     593     593     593     593     593
+------------------------------------------------------------
 ny$Birth.Year: 1938
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  213.0   339.0   626.0   665.8  1070.0  1081.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  213.0   339.0   626.0   665.8  1070.0  1081.0
+------------------------------------------------------------
 ny$Birth.Year: 1939
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  187.0   338.2   659.0   698.8  1015.2  1375.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  187.0   338.2   659.0   698.8  1015.2  1375.0
+------------------------------------------------------------
 ny$Birth.Year: 1940
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  244.0   352.0   529.5   842.8  1089.2  3287.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  244.0   352.0   529.5   842.8  1089.2  3287.0
+------------------------------------------------------------
 ny$Birth.Year: 1941
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   75.0   281.2   474.0   736.9  1140.5  2789.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   75.0   281.2   474.0   736.9  1140.5  2789.0
+------------------------------------------------------------
 ny$Birth.Year: 1942
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  141.0   426.2   566.0   837.8  1043.0  2266.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  141.0   426.2   566.0   837.8  1043.0  2266.0
+------------------------------------------------------------
 ny$Birth.Year: 1943
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    257     344     559    3433     775   53966 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+    257     344     559    3433     775   53966
+------------------------------------------------------------
 ny$Birth.Year: 1944
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  243.0   419.5   666.0   889.7  1192.5  2314.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  243.0   419.5   666.0   889.7  1192.5  2314.0
+------------------------------------------------------------
 ny$Birth.Year: 1945
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  133.0   306.0   524.5   658.7   813.5  2583.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  133.0   306.0   524.5   658.7   813.5  2583.0
+------------------------------------------------------------
 ny$Birth.Year: 1946
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  152.0   406.8   553.0   765.8   944.2  2597.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  152.0   406.8   553.0   765.8   944.2  2597.0
+------------------------------------------------------------
 ny$Birth.Year: 1947
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  125.0   390.5   581.0   767.0  1039.0  2579.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  125.0   390.5   581.0   767.0  1039.0  2579.0
+------------------------------------------------------------
 ny$Birth.Year: 1948
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   70.0   498.0   691.0   924.7  1042.0  7730.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   70.0   498.0   691.0   924.7  1042.0  7730.0
+------------------------------------------------------------
 ny$Birth.Year: 1949
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  121.0   416.5   736.5   828.9  1101.8  3243.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  121.0   416.5   736.5   828.9  1101.8  3243.0
+------------------------------------------------------------
 ny$Birth.Year: 1950
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   99.0   400.5   698.0   832.6  1070.0  2838.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   99.0   400.5   698.0   832.6  1070.0  2838.0
+------------------------------------------------------------
 ny$Birth.Year: 1951
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   88.0   384.8   630.5   786.8  1070.0  3136.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   88.0   384.8   630.5   786.8  1070.0  3136.0
+------------------------------------------------------------
 ny$Birth.Year: 1952
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   72.0   474.0   635.0   811.2   982.5  3350.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   72.0   474.0   635.0   811.2   982.5  3350.0
+------------------------------------------------------------
 ny$Birth.Year: 1953
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   72.0   330.5   526.5   660.1   875.2  2908.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   72.0   330.5   526.5   660.1   875.2  2908.0
+------------------------------------------------------------
 ny$Birth.Year: 1954
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-     87     409     639    1248     973  110648 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+     87     409     639    1248     973  110648
+------------------------------------------------------------
 ny$Birth.Year: 1955
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  102.0   388.0   649.0   792.8  1048.0  4036.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  102.0   388.0   649.0   792.8  1048.0  4036.0
+------------------------------------------------------------
 ny$Birth.Year: 1956
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   92.0   372.8   572.5   714.0   928.8  2797.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   92.0   372.8   572.5   714.0   928.8  2797.0
+------------------------------------------------------------
 ny$Birth.Year: 1957
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   88.0   424.0   656.0   874.3  1063.0 23583.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   88.0   424.0   656.0   874.3  1063.0 23583.0
+------------------------------------------------------------
 ny$Birth.Year: 1958
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   66.0   386.0   612.0   916.4  1019.0 70447.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   66.0   386.0   612.0   916.4  1019.0 70447.0
+------------------------------------------------------------
 ny$Birth.Year: 1959
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   67.0   364.0   606.5   773.3   967.8 14748.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   67.0   364.0   606.5   773.3   967.8 14748.0
+------------------------------------------------------------
 ny$Birth.Year: 1960
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   89.0   352.5   552.0   717.4   983.2  3827.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   89.0   352.5   552.0   717.4   983.2  3827.0
+------------------------------------------------------------
 ny$Birth.Year: 1961
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   374.0   594.0   768.9   979.0  3727.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   374.0   594.0   768.9   979.0  3727.0
+------------------------------------------------------------
 ny$Birth.Year: 1962
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   66.0   349.0   573.0   738.9   935.5  7367.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   66.0   349.0   573.0   738.9   935.5  7367.0
+------------------------------------------------------------
 ny$Birth.Year: 1963
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   61.0   383.5   583.0   781.9  1019.0 15423.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   61.0   383.5   583.0   781.9  1019.0 15423.0
+------------------------------------------------------------
 ny$Birth.Year: 1964
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   73.0   347.0   569.5   822.0   934.0 45877.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   73.0   347.0   569.5   822.0   934.0 45877.0
+------------------------------------------------------------
 ny$Birth.Year: 1965
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   351.5   577.0   744.0   982.0 11559.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   351.5   577.0   744.0   982.0 11559.0
+------------------------------------------------------------
 ny$Birth.Year: 1966
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   80.0   354.0   557.0   754.6   925.0 31382.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   80.0   354.0   557.0   754.6   925.0 31382.0
+------------------------------------------------------------
 ny$Birth.Year: 1967
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   97.0   355.0   589.0   755.8   987.2 18005.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   97.0   355.0   589.0   755.8   987.2 18005.0
+------------------------------------------------------------
 ny$Birth.Year: 1968
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   350.0   575.0   813.2   929.5 56872.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   350.0   575.0   813.2   929.5 56872.0
+------------------------------------------------------------
 ny$Birth.Year: 1969
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   67.0   350.0   587.0   765.0   983.5  4729.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   67.0   350.0   587.0   765.0   983.5  4729.0
+------------------------------------------------------------
 ny$Birth.Year: 1970
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   63.0   364.5   574.0   762.2   946.0 13215.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   63.0   364.5   574.0   762.2   946.0 13215.0
+------------------------------------------------------------
 ny$Birth.Year: 1971
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   66.0   360.0   558.0   721.2   876.2  8895.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   66.0   360.0   558.0   721.2   876.2  8895.0
+------------------------------------------------------------
 ny$Birth.Year: 1972
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   63.0   353.2   590.0   726.9   923.8  5890.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   63.0   353.2   590.0   726.9   923.8  5890.0
+------------------------------------------------------------
 ny$Birth.Year: 1973
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   339.5   576.0   773.9  1002.0 13690.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   339.5   576.0   773.9  1002.0 13690.0
+------------------------------------------------------------
 ny$Birth.Year: 1974
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   373.0   583.0   826.4   942.0 95933.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   373.0   583.0   826.4   942.0 95933.0
+------------------------------------------------------------
 ny$Birth.Year: 1975
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   62.0   340.5   559.0   787.0   890.8 68176.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   62.0   340.5   559.0   787.0   890.8 68176.0
+------------------------------------------------------------
 ny$Birth.Year: 1976
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   82.0   359.0   560.0   771.8   922.0 61087.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   82.0   359.0   560.0   771.8   922.0 61087.0
+------------------------------------------------------------
 ny$Birth.Year: 1977
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   69.0   349.2   574.0   767.7   977.2 28621.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   69.0   349.2   574.0   767.7   977.2 28621.0
+------------------------------------------------------------
 ny$Birth.Year: 1978
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   68.0   346.5   548.0   733.3   937.0 16841.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   68.0   346.5   548.0   733.3   937.0 16841.0
+------------------------------------------------------------
 ny$Birth.Year: 1979
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   68.0   348.0   578.5   746.3   974.8  5673.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   68.0   348.0   578.5   746.3   974.8  5673.0
+------------------------------------------------------------
 ny$Birth.Year: 1980
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   64.0   332.2   540.5   727.2   927.8 12286.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   64.0   332.2   540.5   727.2   927.8 12286.0
+------------------------------------------------------------
 ny$Birth.Year: 1981
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   64.0   331.8   578.5   806.3   980.0 87022.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   64.0   331.8   578.5   806.3   980.0 87022.0
+------------------------------------------------------------
 ny$Birth.Year: 1982
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   61.0   333.0   540.0   716.8   909.2 11409.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   61.0   333.0   540.0   716.8   909.2 11409.0
+------------------------------------------------------------
 ny$Birth.Year: 1983
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   66.0   347.0   550.0   748.7   921.0 35301.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   66.0   347.0   550.0   748.7   921.0 35301.0
+------------------------------------------------------------
 ny$Birth.Year: 1984
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   63.0   344.0   548.0   721.6   896.8  9741.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   63.0   344.0   548.0   721.6   896.8  9741.0
+------------------------------------------------------------
 ny$Birth.Year: 1985
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   344.0   561.0   759.9   950.5 34044.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   344.0   561.0   759.9   950.5 34044.0
+------------------------------------------------------------
 ny$Birth.Year: 1986
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   62.0   357.0   562.0   804.5   968.0 77918.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   62.0   357.0   562.0   804.5   968.0 77918.0
+------------------------------------------------------------
 ny$Birth.Year: 1987
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   70.0   357.8   588.0   778.1   989.2 21584.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   70.0   357.8   588.0   778.1   989.2 21584.0
+------------------------------------------------------------
 ny$Birth.Year: 1988
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   64.0   339.0   574.0   756.2   970.0 10887.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   64.0   339.0   574.0   756.2   970.0 10887.0
+------------------------------------------------------------
 ny$Birth.Year: 1989
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-     66.0     348.0     568.5    1353.8     941.0 1088634.0 
------------------------------------------------------------- 
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.
+     66.0     348.0     568.5    1353.8     941.0 1088634.0
+------------------------------------------------------------
 ny$Birth.Year: 1990
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   344.0   562.0   763.1   968.0 21608.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   344.0   562.0   763.1   968.0 21608.0
+------------------------------------------------------------
 ny$Birth.Year: 1991
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   61.0   371.0   592.0   788.5   960.0 55769.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   61.0   371.0   592.0   788.5   960.0 55769.0
+------------------------------------------------------------
 ny$Birth.Year: 1992
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   65.0   364.0   580.0   749.4   960.0 10418.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   65.0   364.0   580.0   749.4   960.0 10418.0
+------------------------------------------------------------
 ny$Birth.Year: 1993
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   69.0   369.5   590.5   759.2   986.8  9155.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   69.0   369.5   590.5   759.2   986.8  9155.0
+------------------------------------------------------------
 ny$Birth.Year: 1994
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   81.0   344.8   558.0   778.9   891.0 28272.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   81.0   344.8   558.0   778.9   891.0 28272.0
+------------------------------------------------------------
 ny$Birth.Year: 1995
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   85.0   344.0   532.0   744.2   925.0  8825.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   85.0   344.0   532.0   744.2   925.0  8825.0
+------------------------------------------------------------
 ny$Birth.Year: 1996
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   81.0   346.0   526.0   889.9   845.0 51595.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   81.0   346.0   526.0   889.9   845.0 51595.0
+------------------------------------------------------------
 ny$Birth.Year: 1997
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   84.0   309.5   577.0   805.2   939.0 10637.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   84.0   309.5   577.0   805.2   939.0 10637.0
+------------------------------------------------------------
 ny$Birth.Year: 1998
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   99.0   350.2   615.5   912.3  1033.8 21653.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   99.0   350.2   615.5   912.3  1033.8 21653.0
+------------------------------------------------------------
 ny$Birth.Year: 1999
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   71.0   257.0   519.0   641.7   843.5  2044.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   71.0   257.0   519.0   641.7   843.5  2044.0
+------------------------------------------------------------
 ny$Birth.Year: 2000
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  111.0   328.5   505.0   604.4   768.0  2013.0 
------------------------------------------------------------- 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  111.0   328.5   505.0   604.4   768.0  2013.0
+------------------------------------------------------------
 ny$Birth.Year: 2001
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
    1477    1517    1557    2884    3588    5618 </pre>
 </div>
 
@@ -20701,7 +20701,7 @@ ny$Birth.Year: 2001
   </div>
 </body>
 
- 
+
 
 
 </html>
