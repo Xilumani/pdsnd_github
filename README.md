@@ -16,3 +16,6 @@ The project explores and analysis _Bike Share_ data.
 
 ### Credits
 I would like to thank [Udacity](www.udacity.com) for equipping me with the necessary skills to complete the project successfully.
+
+### Disclaimer
+This project is part of my course work at [Udacity](www.udacity.com).
